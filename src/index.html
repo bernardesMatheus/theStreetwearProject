@@ -25,7 +25,402 @@
 	</head>
 
 	<body id="home">
-		
+		<!-- Cabeçalho Bootstrap -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand mx-5" href="#">
+						<img src="../assets/others/brand.png" width="140" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarColor02"
+						aria-controls="navbarColor02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse mx-5" id="navbarColor02">
+						<ul class="navbar-nav mb-2 mb-lg-0 flex-grow-1">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#lancamentos">lançamentos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">nossa História</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">fale Conosco</a>
+							</li>
+						</ul>
+						<form class="d-flex flex-grow-1">
+							<input
+								class="form-control form-control-sm me-2 rounded-pill"
+								type="search"
+								placeholder="..."
+								aria-label="Search"
+							/>
+							<button class="btn btn-outline-light rounded-pill" type="submit">
+								buscar
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Carousel de Sliders -->
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active bg-dark">
+					<img
+						src="../assets/slider/slider-1.png"
+						class="d-block w-100 opacity-75"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Supreme Drop de Primavera</h5>
+						<p>
+							Supreme Spring Sunglasses. Nesta primavera a Supreme lançará
+							quatro estilos de óculos de sol: Koto, Club, Velo e Levy.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item bg-dark">
+					<img
+						src="../assets/slider/slider-2.jpeg"
+						class="d-block w-100 opacity-50"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Legado esportívo da Umbro e espírito skatista da High</h5>
+						<p>
+							Uma marca centenária reconhecida por seus uniformes lendários no
+							futebol unindo forças com uma autêntica marca brasileira de
+							lifestyle urbano voltada ao skate, duas das maiores manifestações
+							culturais do mundo que agora se conectam.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="../assets/slider/slider-3.png"
+						class="d-block img-fluid w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="text-dark">Palace Next Drop</h5>
+						<p class="text-dark">
+							Definido o lanamento do novo Travis Scott Air Jordan 1 Low Reverse
+							Mocha para o mês de Agosto.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!-- Site Principal -->
+		<main class="bg-light py-5">
+			<!-- Carousel de Produtos -->
+			<section id="lancamentos" class="container products">
+				<div class="row">
+					<h2 class="brand-name">High x Umbro - Collab</h2>
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/product-1.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								High x Umbro Jacket Black
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>R$ 499,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/product-2.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								High x Umbro Team Goalkeeper Purple
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>R$ 329,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/product-3.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								High x Umbro White T-Shirt
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>R$ 199,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/product-4.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								Squad Flag Black
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>R$ 149,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<h2 class="brand-name">Supreme - Spring Drop</h2>
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/supreme-1.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								Supreme NASCAR Jacket
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>U$ 799,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2 img-fluid" src="../assets/products/supreme-2.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								Supreme American Football Jacket
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>U$ 729,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/supreme-3.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								Dragon Hoodie
+							</h3>
+							<div
+								class="product-info d-flex justify-content-between align-items-center"
+							>
+								<div class="product-options d-flex">
+									<button class="btn-sm my-2">
+										Ver Detalhes
+										<i
+											class="fa fa-eye fa-sm align-middle"
+											aria-hidden="true"
+										></i>
+									</button>
+									<button class="btn-sm my-2 mx-1">Comprar</button>
+								</div>
+								<div class="product-price">
+									<span>U$ 99,90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product col-12 col-sm-6 col-lg-3 bg-light">
+						<div class="d-flex flex-column p-3 justify-content-between">
+							<div class="product-image">
+								<img class="my-2" src="../assets/products/supreme-4.jpg" />
+							</div>
+							<h3 class="product-name h3 ms-2 my-2">
+								High x Umbro Team Jacket Black
+							</h3>
+							<div
+								class="product-info d-flex justify-content-center align-items-center"
+							>
+								
+								<div class="product-price mt-2">
+									<span>Fora de Estoque</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Botão do Whatsapp -->
+		<div class="whatsapp-button">
+			<img src="../assets/others/whatsapp.png" width="60px" alt="" />
+		</div>
+
+		<!-- Rodapé -->
+		<footer class="py-3 my-4">
+			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+				<li class="nav-item">
+					<a href="#home" class="nav-link px-2 text-muted">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Termos de Serviço</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Onde estamos?</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">FAQs</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Legal</a>
+				</li>
+			</ul>
+			<p class="text-center text-muted">© 2022 Streetwear Company, Inc</p>
+		</footer>
 
 		<!-- Bootstrap -->
 		<script

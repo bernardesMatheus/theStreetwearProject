@@ -3,3 +3,141 @@
 *{
     font-family: 'TheGoodMonolith', sans-serif;
 }
+
+.navbar-brand {
+    filter: saturate(2);
+    animation: logo-animation 5s infinite;
+}
+
+@keyframes logo-animation{
+    0%{
+        filter: saturate(1.5);
+    }
+    50%{
+        filter: saturate(0);
+    }
+    100%{
+        filter: saturate(1.5);
+    }
+}
+
+header input{
+    text-align: right;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    filter: grayscale(1);
+}
+
+input[type="search"]:focus{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.brand-name{
+    margin: 2rem 1.2rem;
+}
+
+.carousel-item img {
+    object-fit: cover !important;
+    width: auto;
+    height: 100vh;
+    max-height: 100vh;
+    cursor: pointer;
+    filter: saturate(1.5);
+}
+
+.product-image{
+    display: flex;
+    max-width: 300px;
+    max-height: 300px;
+    height: 300px;
+    background-color: #fff;
+    padding: 2rem;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+.product-image:hover{
+    padding: 1rem;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit:contain;
+}
+
+.product-name{
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2rem;
+    height: 2.4rem;
+}
+
+@media(max-width: 1366px){
+    .product-name, .brand-name{
+        text-align: center;
+    }
+   
+    .product-info{
+        flex-direction: column;
+    }
+   
+    .product-price{
+        display: none;
+    }
+
+    .product-options i{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .product > div{
+        align-items: center;
+    }
+    .product-name{
+        order: -1;
+    }
+ 
+    .product-info{
+        flex-direction: column;
+    }
+ 
+    .product-options{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 768px){
+    .whatsapp-button{
+        display: none;
+    }
+}
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.whatsapp-button img{
+    filter: grayscale(100%) brightness(0.8) contrast(1.5);
+    transition: 0.5s;
+}
+
+.whatsapp-button:hover img{
+    filter: grayscale(0);
+}
